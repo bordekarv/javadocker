@@ -32,8 +32,7 @@ pipeline {
 stage('Analyzing Code Quality') {
 steps {
 // Step to analyze code quality with SonarQube
-sh '/opt/sonar-scanner/bin/sonar-scanner -Dsonar.projectKey=sonartest23amit_mytestproj -Dsonar.organization=sonartest23amit -Dsonar.qualitygate.wait=false -Dsonar.qualitygate.timeout=300 -Dsonar.sources=src/main/java/ -Dsonar.java.binaries=target/classes -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=4540d1926e42cb4243a7d02dd16811d3303e7105'
-}
+sh '/opt/sonar-scanner/bin/sonar-scanner -Dsonar.projectKey=vaishu_newproject -Dsonar.organization=vaishu -Dsonar.qualitygate.wait=false -Dsonar.qualitygate.timeout=300 -Dsonar.sources=src/main/java/ -Dsonar.java.binaries=target/classes -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=70664aef1bf75f56c55860a0b92167e53785d954'}
 }
     }
 }
